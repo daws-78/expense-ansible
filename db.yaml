@@ -1,6 +1,6 @@
 - name: configure DB server
   tasks:
-  - name: Install MYSQL server
+  - name: Install MYSQL Server
     ansible.builtin.dnf:
     name: mysql-server
     state: latest
