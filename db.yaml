@@ -1,10 +1,5 @@
 - name: configure DB server
   tasks:
-  hosts: db
-  become: yes
-  vars:
-    login_host: db.daws78s.tech
-  tasks:
   - name: Install MYSQL server
     ansible.builtin.dnf:
     name: mysql-server
