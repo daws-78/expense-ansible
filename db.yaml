@@ -8,7 +8,7 @@
     prompt: please enter MYSQL root password
     private: no
   tasks:
-  - name: Install MYSQL Server
+  - name: Install MYSQL server
     ansible.builtin.dnf:
     name: mysql-server
     state: latest
