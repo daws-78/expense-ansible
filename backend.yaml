@@ -54,11 +54,11 @@
       - cryptography
       executable: pip3.9 # pip3.11 if python version 
 
-   - name: import data into mysql
-     community.mysql.mysql_db: 
-        login_user: root
-        login_password: "{{ login_password }}"
-        login_host: "{{ login_host }}" 
-        target: /app/schema/backend.sql
-        state: dump
-        name: all  
+  - name: import data into mysql
+    community.mysql.mysql_db: 
+      login_user: root
+      login_password: "{{ login_password }}"
+      login_host: "{{ login_host }}" 
+      target: /app/schema/backend.sql
+      state: dump
+      name: all  
